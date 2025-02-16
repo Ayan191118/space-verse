@@ -8,13 +8,15 @@ const Banner2 = () => {
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 items-center">
                     
                     <div className="space-y-3 xl:pr-36 p-4 border-b-2 border-l-sky-800 border-b-sky-800">
-                        <p className="text-sky-800 uppercase">Our Mission</p>
-                        <h1 className="uppercase text-5xl">Rapidcast</h1>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda tempore, tempora alias corporis error sapiente! Quo nisi officiis repudiandae perspiciatis eligendi deserunt Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi odit dolore nulla aliquid pariatur dolores. </p>
-                        <button className="primary-button ">Learn More</button>
+                        <p data-aos="fade-up" className="text-sky-800 uppercase">Our Mission</p>
+                        <h1 data-aos="fade-up" data-aos-delay="400" className="uppercase text-5xl">ISS</h1>
+                        <p data-aos="fade-up" data-aos-delay="500">The International Space Station (ISS) is a habitable space laboratory orbiting Earth. Built by NASA, Roscosmos, ESA, JAXA, and CSA, it supports scientific research in microgravity. Astronauts conduct experiments in biology, physics, and space medicine. The ISS orbits Earth every 90 minutes and serves as a base for future space exploration. </p>
+                        <a href="https://en.wikipedia.org/wiki/International_Space_Station">
+                        <button data-aos="fade-up" data-aos-delay="700" className="primary-button ">Learn More</button>
+                        </a>
                     </div>
-                    <div>
-                        <img src={sateliteimg} alt="" />
+                    <div data-aos="zoom-in">
+                        <img src={sateliteimg} alt="" className="w-full sm:w-[80%] mx-auto max-h-[350px] object-cover" />
                     </div>
                 </div>
             </div>

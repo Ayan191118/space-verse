@@ -4,7 +4,7 @@ import logo from "/src/assets/image/logo3.png";
 const Navbar = () => {
     return (
         <>
-            <div className="fixed top-0 w-full right-0
+            <div data-aos="fade-down" className="fixed top-0 w-full right-0
             z-[99] bg-black/10 backdrop-blur-sm py-30 sm:py-4">
                 <div className="container">
                     <div className="flex justify-between items-center">
@@ -12,7 +12,7 @@ const Navbar = () => {
                             <img src={logo} alt="" className="w-10 " />
                             <span>SPACEVERSE</span>
                         </div>
-                        <div className="text-white">
+                        <div className="text-white hidden md:block ">
                             <ul className="flex items-center gap-4 text-xl py-4 ">
                                 <li>
                                     <a href="#">Home </a> 

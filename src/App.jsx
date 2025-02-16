@@ -6,9 +6,22 @@ import Services from "./components/Services/Services";
 import Banner from "./components/Banner/Banner";
 import Banner2 from "./components/Banner/Banner2";
 import Footer from "./components/Footer/Footer";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import Banner3 from "./components/Banner/Banner3";
+import Banner4 from "./components/Banner/Banner4";
 
 
 const App = () => {
+
+  React.useEffect(() => {
+    AOS.init({
+      duration: 1200,
+      easing: "ease-in-out",
+    });
+  
+  });
+  
   return (
     <div>
         <div className="h-[700px] relative">
@@ -28,6 +41,8 @@ const App = () => {
         
         <Banner />
         <Banner2 />
+        <Banner3/>
+        <Banner4/>
         <Footer />
     </div>
   )

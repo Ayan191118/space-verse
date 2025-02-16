@@ -7,13 +7,16 @@ const Banner = () => {
             <div className="container">
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 items-center">
                     <div>
-                        <img src={sateliteimg} alt="" />
+                        <img data-aos="zoom-in" src={sateliteimg} alt="" className="w-full sm:w-[80%] mx-auto max-h-[350px] object-cover" />
                     </div>
                     <div className="space-y-3 xl:pr-36 p-4 border-b-2 border-r-sky-800 border-b-sky-800">
-                        <p className="text-sky-800 uppercase">Our Mission</p>
-                        <h1 className="uppercase text-5xl">Rapidcast</h1>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda tempore, tempora alias corporis error sapiente! Quo nisi officiis repudiandae perspiciatis eligendi deserunt Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta quibusdam suscipit similique dolor? Alias, cumque? </p>
-                        <button className="primary-button ">Learn More</button>
+                        <p data-aos="fade-up" className="text-sky-800 uppercase">Our Mission</p>
+                        <h1 data-aos="fade-up"  className="uppercase text-5xl">Satellite</h1>
+                        <p data-aos="fade-up" data-aos-delay="500">A satellite is an object that orbits a planet or star. It can be natural (like the Moon) or artificial (human-made for communication, navigation, weather, or research). Satellites collect data, transmit signals, and monitor Earth. They play a crucial role in GPS, internet, space exploration, and military surveillance. </p>
+                        <a href="https://en.wikipedia.org/wiki/Satellite">
+                        <button data-aos="fade-up" data-aos-delay="700" className="primary-button ">Learn More
+                        </button>
+                            </a>
                     </div>
                 </div>
             </div>
